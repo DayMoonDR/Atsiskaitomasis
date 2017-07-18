@@ -8,8 +8,11 @@
     <title>Bootstrap 101 Template</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="scss/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="scss/style.css">
+    <link rel="stylesheet" href="scss/font-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap.min.css"
+          rel="stylesheet"/>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -19,16 +22,128 @@
     <![endif]-->
 </head>
 <body>
-<button class="btn btn-primary">hello</button>
+
+<div id="container">
+    <!--header-->
+
+    <header id="header">
+        <!--Top NavBar-->
+        <div class="top_navbar">
+            <div class="navbar_components">
+                <!--Language dropdown-->
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        <i class="fa fa-globe" aria-hidden="true">
+                            <span class="components">English</span>
+                        </i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                    </div>
+                </div>
+                <!--anguage dropdown end-->
+                <!--Login popup-->
 
 
+                <div class="login">
+                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal"
+                            data-target="#myModal">
+                        <i class="fa fa-key" aria-hidden="true">
+                            <span class="components">Login</span>
+                        </i>
+                    </button>
+                    <div class="modal fade" id="myModal" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Modal Header</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Some text in the modal.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Login popup end-->
+                <!--last components-->
+                <span class="components">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <span class="title">Call us : </span>
+                    (123) 456 - 7890
+                </span>
+                <span class="components">
+                    <i class="fa fa-comment-o" aria-hidden="true"></i>
+                <span class="title">Suport : </span>
+                     (123) 456 - 7890
+                </span>
+
+                <!--last components end-->
+                <!--navbar icons-->
+
+                <div class="navbar_icons">
+                    <div class="icon_bar">
+                        <div id="mySidenav" class="sidenav">
+                            <div class="icon-container">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </div>
+                                    <a href="#" class="slide">Facebook</a>
+
+                            <div class="icon-container">
+
+                                <i class="fa fa-twitter" aria-hidden="true">
+                                    <a href="#" class="slide">Twitter</a>
+                                </i>
+
+                            </div>
+                            <div class="icon-container">
+
+                                <i class="fa fa-google-plus" aria-hidden="true">
+                                    <a href="#" class="slide">Google+</a>
+                                </i>
+
+                            </div>
+                            <div class="icon-container">
+
+                                <i class="fa fa-skype" aria-hidden="true">
+                                    <a href="#" class="slide">Skype</a>
+                                </i>
+
+                            </div>
+                            <div class="icon-container">
+
+                                <i class="fa fa-connectdevelop" aria-hidden="true">
+                                    <a href="#" class="slide">Connectdevelop</a>
+                                </i>
+                            </div>
+                            <div class="icon-container">
+
+                                <i class="fa fa-vimeo" aria-hidden="true">
+                                    <a href="#" class="slide">Vimeo</a>
+                                </i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--navbar icons end-->
+                <!--top navnar end-->
+            </div>
+        </div>
 
 
+        <div class="bottom_navbar"></div>
 
 
+    </header>
+    <!--header end-->
 
-
-
+</div>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -36,3 +151,5 @@
 <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
+
+
