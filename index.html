@@ -27,121 +27,131 @@
     <!--header-->
 
     <header id="header">
-        <!--Top NavBar-->
-        <div class="top_navbar">
-            <div class="navbar_components">
-                <!--Language dropdown-->
-                <div class="dropdown">
-                    <button class="dropbtn">
-                        <i class="fa fa-globe" aria-hidden="true">
-                            <span class="components">English</span>
-                        </i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
+        <div id="header_container">
+            <div class="header_first_cont">
+                <!-- Englis, Login, Call us, Support -->
+                <div class="header_first_cont_contents">
+                    <div class="compon_bar">
+                        <i class="fa fa-globe" aria-hidden="true"></i>
+                        <span>ENGLISH</span>
                     </div>
-                </div>
-                <!--anguage dropdown end-->
-                <!--Login popup-->
+                    <div class="compon_bar">
+                        <i class="fa fa-key" aria-hidden="true"></i>
+                        <a class="login_a" href="#" data-toggle="modal" data-target="#login-modal">LOGIN</a>
 
+                        <div class="modal fade" id="login-modal" tabindex="-1" role="dialog"
+                             aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                            <div class="modal-dialog">
+                                <div class="loginmodal-container">
+                                    <h1>Login</h1><br>
+                                    <form>
+                                        <input type="text" name="user" placeholder="Username">
+                                        <input type="password" name="pass" placeholder="Password">
+                                        <input type="submit" name="login" class="login loginmodal-submit" value="Login">
+                                    </form>
 
-                <div class="login">
-                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal"
-                            data-target="#myModal">
-                        <i class="fa fa-key" aria-hidden="true">
-                            <span class="components">Login</span>
-                        </i>
-                    </button>
-                    <div class="modal fade" id="myModal" role="dialog">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    <h4 class="modal-title">Modal Header</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Some text in the modal.</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    <div class="login-help">
+                                        <a href="#">Register</a> - <a href="#">Forgot Password</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="compon_bar">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <span>CALL US : </span>
+                        (123) 456 - 7890
+                    </div>
+                    <div class="compon_bar">
+                        <i class="fa fa-comment-o" aria-hidden="true"></i>
+                        <span>SUPPORT : </span>
+                        (123) 456 - 7890
+                    </div>
                 </div>
-                <!--Login popup end-->
-                <!--last components-->
-                <span class="components">
-                    <i class="fa fa-phone" aria-hidden="true"></i>
-                    <span class="title">Call us : </span>
-                    (123) 456 - 7890
-                </span>
-                <span class="components">
-                    <i class="fa fa-comment-o" aria-hidden="true"></i>
-                <span class="title">Suport : </span>
-                     (123) 456 - 7890
-                </span>
+                <!--Icons-->
+                <div class="icons_bar">
+                    <a class="icons" href="#">
+                        <span>
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </span>
+                    </a>
 
-                <!--last components end-->
-                <!--navbar icons-->
+                    <a class="icons" href="#">
+                        <span>
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </span>
+                    </a>
 
-                <div class="navbar_icons">
-                    <div class="icon_bar">
-                        <div id="mySidenav" class="sidenav">
-                            <div class="icon-container">
-                                <i class="fa fa-facebook" aria-hidden="true"></i>
-                            </div>
-                                    <a href="#" class="slide">Facebook</a>
+                    <a class="icons" href="#">
 
-                            <div class="icon-container">
+                        <span>
+                            <i class="fa fa-google-plus" aria-hidden="true"></i>
+                        </span>
+                    </a>
 
-                                <i class="fa fa-twitter" aria-hidden="true">
-                                    <a href="#" class="slide">Twitter</a>
-                                </i>
+                    <a class="icons" href="#">
 
-                            </div>
-                            <div class="icon-container">
+                        <span>
+                            <i class="fa fa-skype" aria-hidden="true"></i>
+                        </span>
+                    </a>
 
-                                <i class="fa fa-google-plus" aria-hidden="true">
-                                    <a href="#" class="slide">Google+</a>
-                                </i>
+                    <a class="icons" href="#">
+                        <span>
+                            <i class="fa fa-circle-o" aria-hidden="true"></i>
+                        </span>
 
-                            </div>
-                            <div class="icon-container">
+                    </a>
+                    <a class="icons" href="#">
+                        <span>
+                            <i class="fa fa-vimeo" aria-hidden="true"></i>
+                        </span>
+                    </a>
 
-                                <i class="fa fa-skype" aria-hidden="true">
-                                    <a href="#" class="slide">Skype</a>
-                                </i>
 
-                            </div>
-                            <div class="icon-container">
-
-                                <i class="fa fa-connectdevelop" aria-hidden="true">
-                                    <a href="#" class="slide">Connectdevelop</a>
-                                </i>
-                            </div>
-                            <div class="icon-container">
-
-                                <i class="fa fa-vimeo" aria-hidden="true">
-                                    <a href="#" class="slide">Vimeo</a>
-                                </i>
-                            </div>
+                </div>
+            </div>
+            <div>
+                <!--NavBar-->
+                <div>
+                    <!--Logotip-->
+                    <!--Nav components-->
+                    <div class="container-fluid">
+                        <div class="">
+                            <nav>
+                                <ul>
+                                    <li><a href=""></a></li>
+                                    <li><a href=""></a></li>
+                                    <li><a href=""></a></li>
+                                    <li><a href=""></a></li>
+                                    <li><a href=""></a></li>
+                                    <li><a href=""></a></li>
+                                    <li><a href=""></a></li>
+                                    <li><a href=""></a></li>
+                                </ul>
+                            </nav>
                         </div>
                     </div>
+                    <!--Search bar-->
+                    <div>
+                        <form>
+                            <button type="button"></button>
+                            <input type="text" name="googlesearch" placeholder="Search Here ...">
+                        </form>
+                    </div>
+
+                    <!--ShopingBag-->
+                    <div></div>
 
                 </div>
-                <!--navbar icons end-->
-                <!--top navnar end-->
             </div>
         </div>
 
 
-        <div class="bottom_navbar"></div>
-
-
     </header>
     <!--header end-->
+
+    <footer></footer>
 
 </div>
 

@@ -1,105 +1,41 @@
-/*main container*/
 
-#container {
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  background-color: #fff;
+.header_first_cont {
+  max-width: 1170px;
+  margin: auto;
+  overflow: auto;
+  padding: 0 15px;
 
-}
-
-/*header*/
-#header {
-  height: 1000px;
-}
-
-/*Top NavBar*/
-.top_navbar {
-
-  width: 100%;
-  margin: 0;
-  position: relative;
-
-  .navbar_components {
-    overflow: auto;
-    max-width: 1170px;
-    background-color: red;
+  .header_first_cont_contents {
+    float: left;
     margin: auto;
-    padding: 0;
+    overflow: auto;
+
+    .compon_bar {
+      float: left;
+      margin-right: 40px;
+      padding: 12px 0;
+      font-size: 11px;
+      color: #777777;
+    }
   }
 
-  .dropdown {
-    display: inline-block;
-    float: left;
-  }
+  .icons_bar {
+    float: right;
 
-  .dropbtn {
-    text-transform: uppercase;
-    color: #777777;
-    border: none;
-    cursor: pointer;
-  }
+    a.icons {
+      float: left;
+      height: 32px;
+      width: 32px;
+      margin: 5px 2px;
+      text-align: center;
+      border-bottom-left-radius: 20%;
+      border-top-left-radius: 20%;
+      color: #777777;
 
-  .components {
-    font-size: xx-small;
-  }
-
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    z-index: 1;
-  }
-
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-
-  .dropdown-content a:hover {
-    background-color: blue;
-  }
-
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  /*-Login popup*/
-  .login {
-    float: left;
-  }
-}
-
-/*navbar icons
- */
-.navbar_icons {
-  float: right;
-
-  #mySidenav a {
-    position: absolute;
-    left: 0;
-    transition: 0.3s;
-
-    width: 100px;
-    text-decoration: none;
-    font-size: 20px;
-    color: white;
-    border-radius: 0 5px 5px 0;
-  }
-
-  #mySidenav a:hover {
-    left: 20px;
-  }
-
-  .slide {
-
-    background-color: blue;
+      i {
+        padding-top: 9px
+      }
+    }
   }
 
 }
-
-/*Top Nav Bar*/
-
