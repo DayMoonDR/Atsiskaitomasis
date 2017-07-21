@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff; }
+
 .header_first_cont {
   max-width: 1170px;
   margin: auto;
@@ -26,5 +31,22 @@
       color: #777777; }
       .header_first_cont .icons_bar a.icons i {
         padding-top: 9px; }
+
+.navbar {
+  width: 100%;
+  margin: 0 !important; }
+  .navbar .container-fluid {
+    width: 1170px;
+    padding: 0 15px;
+    margin: auto; }
+  .navbar .logo {
+    margin-right: 45px; }
+  .navbar .logo_img {
+    margin-top: 13px; }
+
+@media (max-width: 768px) {
+  .compon_bar {
+    margin-right: 10px !important;
+    padding: 10px 0 !important; } }
 
 /*# sourceMappingURL=style.css.map */
